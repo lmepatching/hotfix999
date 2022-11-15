@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LME MS Teams Hotfix.exe" version="1.0.0.0" publicKeyToken="eb2363ec13ee4cd1" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="dfMonitor" version="2.9.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="MSTeamsdeploy999\dfMonitor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MSTeamsdeploy999\dfMonitor.exe" size="101752">
+      <assemblyIdentity name="dfMonitor" version="2.9.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6QkiPhtiqpYb3vxJhlTIkALzyeTvMZT/1jq0O+0V91w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=MICHAEL03\michael" issuerKeyHash="4e8fc4de24b4917046ad4984182e8be2ea8eb9b3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iodEfzYi5/5WykN36tPxdYEnEEIQ+TZ24dVWYRxhcgY=</DigestValue></Reference></SignedInfo><SignatureValue>lNPXrAHGcLQBaFkUoUrDMKr1PIbpAIGUiCDfLFq4LIAlEn2E2V0Uiq94DQ8KP28aNiWcJ1u0rsgglBPUrJAxVGrF247c1zVBXZ+gLbT6VKVXJTGbftHGYuD/kGcjFVK7dlKqtUsX4WiFfyxAEvWA3qsbnFYnTN8BPGdmJd5JQ/E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zSCNWKIoLE6vpTdfDyKqT/HksR0nv9QLL+LrJlFAtfjC6GsAY0V6cU7rdnKKgZbqzfOM2ziGKMNY6/bNvGtkUCtwG4U5MB9KZRerlXCW7/DfD86Yd1TxfF/MDevOpZ91lVz3vLP2GZs0o5xPFgftHVPl/7SYUTyOTLYVb3XGRlk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0672611c6156d5e17636f9104210278175f1d3ea7743ca56fee722367f44878a" Description="" Url=""><as:assemblyIdentity name="LME MS Teams Hotfix.exe" version="1.0.0.0" publicKeyToken="eb2363ec13ee4cd1" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MICHAEL03\michael</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TFolfSEM2Uarw2jVM0BTiaOnJrX4PcnVc4kL2xlW/ag=</DigestValue></Reference></SignedInfo><SignatureValue>jJU7m9cOt/uB992zZXqBzNGnLCAfBzUtrfz1g1wqmEINiPGWev7wvqjC0cD43dffmYVHxoqpEiHBrkEiEI1Nv8mpT56JLniAjDxI3d/uLQULeU+VtBCLTA06yS/oniXCRKpyBf/moZTms1aIAeLMtor1palcMsrxQz37hg3eROQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zSCNWKIoLE6vpTdfDyKqT/HksR0nv9QLL+LrJlFAtfjC6GsAY0V6cU7rdnKKgZbqzfOM2ziGKMNY6/bNvGtkUCtwG4U5MB9KZRerlXCW7/DfD86Yd1TxfF/MDevOpZ91lVz3vLP2GZs0o5xPFgftHVPl/7SYUTyOTLYVb3XGRlk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9jCCAV+gAwIBAgIQVWdC8oil3oxL6qsw6fRL9zANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIATQBJAEMASABBAEUATAAwADMAXABtAGkAYwBoAGEAZQBsMB4XDTIyMTExNTA3MTEwNFoXDTM5MDEwMjAwMDAwMFowLTErMCkGA1UEAx4iAE0ASQBDAEgAQQBFAEwAMAAzAFwAbQBpAGMAaABhAGUAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzSCNWKIoLE6vpTdfDyKqT/HksR0nv9QLL+LrJlFAtfjC6GsAY0V6cU7rdnKKgZbqzfOM2ziGKMNY6/bNvGtkUCtwG4U5MB9KZRerlXCW7/DfD86Yd1TxfF/MDevOpZ91lVz3vLP2GZs0o5xPFgftHVPl/7SYUTyOTLYVb3XGRlkCAwEAAaMXMBUwEwYDVR0lBAwwCgYIKwYBBQUHAwMwDQYJKoZIhvcNAQELBQADgYEASNA05ueFuFInII3j9wRtKW2rqeYTW+NxzMFpCLonqC8LjVCfSD4NAVAOebzb6ryFnBWwat1NR4Xltxb4fGd6Cn3kvh08t1NEe2WPvVYFdeCH6mLoads+eP2f6NDrHlxtyijfIlXCws591Q31bsUkESmQFjdoF0TQD8KyR7vr4gw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
